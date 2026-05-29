@@ -5,6 +5,10 @@ import { DATA } from "@/data/resume";
 import { Activity } from "lucide-react";
 
 export function Activities() {
+  if (!Array.isArray(DATA.activities) || DATA.activities.length === 0) {
+    return null;
+  }
+
   return (
     <section id="activities" className="py-24 relative bg-slate-900/30">
       <div className="container mx-auto px-6 md:px-12">

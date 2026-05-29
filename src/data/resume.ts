@@ -1,14 +1,13 @@
 export const DATA = {
   name: "Tanisha Patil",
   initials: "TP",
-  location: "Pune, India",
-  locationLink: "https://www.google.com/maps/place/Pune",
+  location: "Pune Division, Maharashtra, India",
   about:
-    "AI/ML Engineer and Full Stack Developer with a passion for building intelligent products. Currently pursuing B.Tech in Computer Science (AI & ML) with a strong foundation in enterprise systems and scalable architectures.",
+    "I'm a Frontend and Full Stack Developer passionate about building modern, user-focused web applications that solve real-world problems. Currently pursuing B.Tech in Artificial Intelligence & Machine Learning at PCCOE, I've worked on projects ranging from production-ready business websites to machine learning applications. I'm currently working as a Web Developer Intern at Probity Technologies, contributing to enterprise-level web solutions and improving application usability and functionality.",
   summary:
-    "I am a passionate builder who bridges the gap between artificial intelligence and practical web applications. With experience in React, TypeScript, and machine learning models, I create premium, robust digital experiences.",
+    "Building modern web applications and projects to solve real-world problems.",
   avatarUrl: "/me.png",
-  personalWebsiteUrl: "https://tanisha.com",
+  personalWebsiteUrl: "",
   contact: {
     email: "tanisha.patil.ai@gmail.com",
     tel: "+91",
@@ -20,7 +19,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/tanishapatil971",
+        url: "https://www.linkedin.com/in/tanishapatil971",
         icon: "linkedin",
       },
       LeetCode: {
@@ -32,59 +31,59 @@ export const DATA = {
   },
   education: [
     {
-      school: "PCCOE Pune",
+      school: "Pimpri Chinchwad Education Trust's Pimpri Chinchwad College of Engineering",
       href: "#",
-      degree: "B.Tech Computer Science (AI & ML)",
+      degree: "BTech in CSE (AIML)",
       logoUrl: "/pccoe.png",
       start: "2024",
-      end: "Present",
-      description: "CGPA 8.53. Specialized in Machine Learning, Deep Learning, and Artificial Intelligence.",
+      end: "present",
+      description: "CGPA 8.6",
     },
     {
-      school: "Higher Secondary Certificate (HSC)",
+      school: "FC Jain College",
       href: "#",
-      degree: "Science Stream",
+      degree: "HSC (12th)",
       logoUrl: "/college.png",
       start: "",
       end: "2024",
-      description: "91.33%",
+      description: "Percentage: 91.33%",
     },
     {
-      school: "Secondary School Certificate (SSC)",
+      school: "P.B.M School and Jr.College",
       href: "#",
-      degree: "General",
+      degree: "SSC (10th)",
       logoUrl: "/school.png",
       start: "",
       end: "2022",
-      description: "91.80%",
+      description: "Percentage: 91.80%",
     },
   ],
   work: [
     {
       company: "Probity Technologies Pvt. Ltd.",
       href: "#",
-      badges: ["Internship"],
-      location: "On-site",
-      title: "Web Developer Intern",
+      badges: ["React", "TypeScript", "Ant Design"],
+      location: "Remote",
+      title: "Web Developer",
       logoUrl: "/probity.png",
       start: "May 2026",
       end: "Present",
       description:
-        "Developed and maintained Enterprise Maintenance Management System. Built ERP workflow modules and implemented role-based authorization using React, TypeScript, and Ant Design.",
+        "Working on the development of an Enterprise Maintenance Management System using React, TypeScript, and Ant Design. Implementing role-based authorization, multiple master and transaction modules, CRUD operations, sidebar-based enterprise navigation, and responsive ERP-style UI for maintenance workflow management and machine downtime tracking.",
     },
   ],
   skills: {
-    programming: ["Python", "JavaScript", "TypeScript", "C++", "Java"],
-    web: ["React.js", "Next.js", "Tailwind CSS", "Node.js", "Express", "HTML/CSS"],
-    ai: ["Machine Learning", "Deep Learning", "TensorFlow", "Scikit-Learn", "Pandas", "NumPy"],
-    databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
-    tools: ["Git", "GitHub", "Docker", "VS Code", "Postman"],
+    programming: ["Python", "Kotlin", "C", "C++", "Java"],
+    web: ["React.js", "Next.js", "Tailwind CSS", "Node.js", "JavaScript", "HTML/CSS"],
+    ai: ["Machine Learning", "Deep Learning", "Natural Language Processing", "Scikit-Learn", "Pandas", "NumPy"],
+    databases: ["MongoDB", "Oracle", "MySQL"],
+    tools: ["Git", "GitHub", "Flutter", "VS Code"],
   },
   projects: [
     {
       title: "Muhurta Yatra",
       href: "#",
-      dates: "2023",
+      dates: "2026",
       active: true,
       description:
         "A comprehensive consultancy project providing an interactive booking and management system for travel packages. Built with full-stack capabilities for seamless user experience.",
@@ -92,8 +91,8 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com",
-          icon: "github",
+          href: "https://muhurta-yatra-website.vercel.app/",
+          icon: "external-link",
         },
       ],
       image: "",
@@ -102,7 +101,7 @@ export const DATA = {
     {
       title: "Commodity Price Prediction",
       href: "#",
-      dates: "2023",
+      dates: "2025",
       active: true,
       description:
         "An AI model that predicts future commodity prices using historical data and market trends, employing advanced regression techniques.",
@@ -110,7 +109,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com",
+          href: "https://github.com/tanishapatil971/commodities-price-prediction",
           icon: "github",
         },
       ],
@@ -128,7 +127,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com",
+          href: "https://github.com/tanishapatil971/movie-recommendation-system",
           icon: "github",
         },
       ],
@@ -137,17 +136,7 @@ export const DATA = {
     },
   ],
   achievements: [
-    "98.93 percentile MHT-CET",
-    "1st rank in 12th board",
-    "2nd rank in 10th board",
-    "Best Exhibitor Award",
-    "IoT Hackathon Finalist",
-    "NPTEL DBMS Certification",
-    "HubSpot Digital Marketing Certification"
-  ],
-  activities: [
-    "NSS Volunteer",
-    "Kho-Kho Captain",
-    "Technical Events Participation"
+    "NPTEL Online Certification - Database Management System",
+    "Social Media Marketing Certification"
   ]
 };
