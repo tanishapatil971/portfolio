@@ -46,7 +46,12 @@ export function Navbar() {
         >
           {DATA.name}
         </Link>
-        <nav className="hidden md:flex items-center gap-8">
+        <motion.nav
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.45, delay: 0.15 }}
+          className="hidden md:flex items-center gap-8"
+        >
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -56,9 +61,9 @@ export function Navbar() {
               {item.name}
             </Link>
           ))}
-        </nav>
+        </motion.nav>
         {/* Mobile Menu Button - Minimal version */}
-        <button className="md:hidden text-slate-300 hover:text-white">
+        <motion.button whileHover={{ y: -1, scale: 1.05 }} whileTap={{ scale: 0.95 }} className="md:hidden text-slate-300 hover:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -74,7 +79,7 @@ export function Navbar() {
             <line x1="4" x2="20" y1="6" y2="6" />
             <line x1="4" x2="20" y1="18" y2="18" />
           </svg>
-        </button>
+        </motion.button>
       </div>
     </motion.header>
   );

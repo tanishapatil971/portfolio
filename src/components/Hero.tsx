@@ -12,6 +12,14 @@ const iconMap = {
   code: FiCode,
 };
 
+const floatingNodes = [
+  { top: "12%", left: "18%", delay: 0 },
+  { top: "26%", left: "76%", delay: 0.4 },
+  { top: "60%", left: "12%", delay: 0.8 },
+  { top: "68%", left: "68%", delay: 1.1 },
+  { top: "42%", left: "48%", delay: 1.6 },
+];
+
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -136,25 +144,31 @@ export function Hero() {
             <div className="absolute inset-8 rounded-full glass flex items-center justify-center overflow-hidden">
                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/40" />
                <Code2 size={64} className="text-blue-400 opacity-80" />
+               <motion.div
+                 animate={{ scale: [0.95, 1.05, 0.95], opacity: [0.35, 0.15, 0.35] }}
+                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                 className="absolute inset-0 rounded-full border border-cyan-400/20"
+               />
             </div>
             
             {/* Floating nodes */}
-            {[...Array(5)].map((_, i) => (
+            {floatingNodes.map((node, i) => (
               <motion.div
                 key={i}
                 animate={{ 
-                  y: [0, -15, 0], 
-                  opacity: [0.5, 1, 0.5] 
+                  y: [0, -16, 0], 
+                  opacity: [0.4, 1, 0.4] 
                 }}
                 transition={{ 
-                  duration: 3 + i, 
+                  duration: 3.5 + i,
                   repeat: Infinity,
-                  delay: i * 0.5 
+                  delay: node.delay,
+                  ease: "easeInOut"
                 }}
-                className="absolute w-3 h-3 rounded-full bg-cyan-400 shadow-[0_0_10px_#06b6d4]"
+                className="absolute w-3 h-3 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(6,182,212,0.6)]"
                 style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
+                  top: node.top,
+                  left: node.left,
                 }}
               />
             ))}
