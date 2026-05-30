@@ -135,6 +135,12 @@ export const DATA = {
       featured: false,
     },
   ],
+  activities: [
+    "Open-source contributor",
+    "Coding club mentor",
+    "Tech community volunteer",
+    "AI study group participant"
+  ],
   achievements: [
     "NPTEL Online Certification - Database Management System",
     "Social Media Marketing Certification"
