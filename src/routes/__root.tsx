@@ -10,9 +10,9 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
-import appCss from "../styles.css?url";
-import { reportAppError } from "../lib/error-reporting";
-import { SiteShell } from "../components/portfolio/SiteShell";
+import appCss from "@/styles.css?url";
+import { reportAppError } from "@/lib/error-reporting";
+import { SiteShell } from "@/components/portfolio/SiteShell";
 
 function NotFoundComponent() {
   return (
@@ -80,7 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         {
           rel: "preconnect",
           href: "https://fonts.gstatic.com",
-          crossOrigin: "anonymous",
+          crossOrigin: "anonymous" as const,
         },
         {
           rel: "stylesheet",
