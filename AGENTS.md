@@ -1,0 +1,2 @@
+- Keep portfolio facts and reusable project/credential data centralized in `src/lib/portfolio-data.ts` so all pages stay consistent.
+- Render persistent navigation and the ambient canvas through `SiteShell` in the root route so all portfolio pages share one system frame.
