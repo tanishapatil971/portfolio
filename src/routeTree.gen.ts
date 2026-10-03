@@ -8,120 +8,115 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from "./routes/__root";
-import { Route as IndexRouteImport } from "./routes/index";
-import { Route as ContactRouteImport } from "./routes/contact";
-import { Route as CredentialsRouteImport } from "./routes/credentials";
-import { Route as ExperienceRouteImport } from "./routes/experience";
-import { Route as ProjectsRouteImport } from "./routes/projects";
+import { Route as rootRouteImport } from './routes/__root'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CredentialsRouteImport } from './routes/credentials'
+import { Route as ExperienceRouteImport } from './routes/experience'
+import { Route as ProjectsRouteImport } from './routes/projects'
 
 const IndexRoute = IndexRouteImport.update({
-  id: "/",
-  path: "/",
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
-} as any);
+} as any)
 const ContactRoute = ContactRouteImport.update({
-  id: "/contact",
-  path: "/contact",
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
-} as any);
+} as any)
 const CredentialsRoute = CredentialsRouteImport.update({
-  id: "/credentials",
-  path: "/credentials",
+  id: '/credentials',
+  path: '/credentials',
   getParentRoute: () => rootRouteImport,
-} as any);
+} as any)
 const ExperienceRoute = ExperienceRouteImport.update({
-  id: "/experience",
-  path: "/experience",
+  id: '/experience',
+  path: '/experience',
   getParentRoute: () => rootRouteImport,
-} as any);
+} as any)
 const ProjectsRoute = ProjectsRouteImport.update({
-  id: "/projects",
-  path: "/projects",
+  id: '/projects',
+  path: '/projects',
   getParentRoute: () => rootRouteImport,
-} as any);
+} as any)
 
 export interface FileRoutesByFullPath {
-  "/": typeof IndexRoute;
-  "/contact": typeof ContactRoute;
-  "/credentials": typeof CredentialsRoute;
-  "/experience": typeof ExperienceRoute;
-  "/projects": typeof ProjectsRoute;
+  '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/credentials': typeof CredentialsRoute
+  '/experience': typeof ExperienceRoute
+  '/projects': typeof ProjectsRoute
 }
 export interface FileRoutesByTo {
-  "/": typeof IndexRoute;
-  "/contact": typeof ContactRoute;
-  "/credentials": typeof CredentialsRoute;
-  "/experience": typeof ExperienceRoute;
-  "/projects": typeof ProjectsRoute;
+  '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/credentials': typeof CredentialsRoute
+  '/experience': typeof ExperienceRoute
+  '/projects': typeof ProjectsRoute
 }
 export interface FileRoutesById {
-  __root__: typeof rootRouteImport;
-  "/": typeof IndexRoute;
-  "/contact": typeof ContactRoute;
-  "/credentials": typeof CredentialsRoute;
-  "/experience": typeof ExperienceRoute;
-  "/projects": typeof ProjectsRoute;
+  __root__: typeof rootRouteImport
+  '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/credentials': typeof CredentialsRoute
+  '/experience': typeof ExperienceRoute
+  '/projects': typeof ProjectsRoute
 }
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath;
-  fullPaths: "/" | "/contact" | "/credentials" | "/experience" | "/projects";
-  fileRoutesByTo: FileRoutesByTo;
-  to: "/" | "/contact" | "/credentials" | "/experience" | "/projects";
+  fileRoutesByFullPath: FileRoutesByFullPath
+  fullPaths: '/' | '/contact' | '/credentials' | '/experience' | '/projects'
+  fileRoutesByTo: FileRoutesByTo
+  to: '/' | '/contact' | '/credentials' | '/experience' | '/projects'
   id:
-    | "__root__"
-    | "/"
-    | "/contact"
-    | "/credentials"
-    | "/experience"
-    | "/projects";
-  fileRoutesById: FileRoutesById;
+    '__root__' | '/' | '/contact' | '/credentials' | '/experience' | '/projects'
+  fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute;
-  ContactRoute: typeof ContactRoute;
-  CredentialsRoute: typeof CredentialsRoute;
-  ExperienceRoute: typeof ExperienceRoute;
-  ProjectsRoute: typeof ProjectsRoute;
+  IndexRoute: typeof IndexRoute
+  ContactRoute: typeof ContactRoute
+  CredentialsRoute: typeof CredentialsRoute
+  ExperienceRoute: typeof ExperienceRoute
+  ProjectsRoute: typeof ProjectsRoute
 }
 
-declare module "@tanstack/react-router" {
+declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    "/": {
-      id: "/";
-      path: "/";
-      fullPath: "/";
-      preLoaderRoute: typeof IndexRouteImport;
-      parentRoute: typeof rootRouteImport;
-    };
-    "/contact": {
-      id: "/contact";
-      path: "/contact";
-      fullPath: "/contact";
-      preLoaderRoute: typeof ContactRouteImport;
-      parentRoute: typeof rootRouteImport;
-    };
-    "/credentials": {
-      id: "/credentials";
-      path: "/credentials";
-      fullPath: "/credentials";
-      preLoaderRoute: typeof CredentialsRouteImport;
-      parentRoute: typeof rootRouteImport;
-    };
-    "/experience": {
-      id: "/experience";
-      path: "/experience";
-      fullPath: "/experience";
-      preLoaderRoute: typeof ExperienceRouteImport;
-      parentRoute: typeof rootRouteImport;
-    };
-    "/projects": {
-      id: "/projects";
-      path: "/projects";
-      fullPath: "/projects";
-      preLoaderRoute: typeof ProjectsRouteImport;
-      parentRoute: typeof rootRouteImport;
-    };
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credentials': {
+      id: '/credentials'
+      path: '/credentials'
+      fullPath: '/credentials'
+      preLoaderRoute: typeof CredentialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/experience': {
+      id: '/experience'
+      path: '/experience'
+      fullPath: '/experience'
+      preLoaderRoute: typeof ExperienceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects': {
+      id: '/projects'
+      path: '/projects'
+      fullPath: '/projects'
+      preLoaderRoute: typeof ProjectsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -131,17 +126,17 @@ const rootRouteChildren: RootRouteChildren = {
   CredentialsRoute: CredentialsRoute,
   ExperienceRoute: ExperienceRoute,
   ProjectsRoute: ProjectsRoute,
-};
+}
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>();
+  ._addFileTypes<FileRouteTypes>()
 
-import type { getRouter } from "./router.tsx";
-import type { startInstance } from "./start.ts";
-declare module "@tanstack/react-start" {
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
   interface Register {
-    ssr: true;
-    router: Awaited<ReturnType<typeof getRouter>>;
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>;
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
   }
 }
